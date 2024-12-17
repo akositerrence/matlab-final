@@ -1,4 +1,4 @@
-function answer = grad(f, x0)
+function answer = prepb(f, x0)
     for i = 1:length(x0)
         val(:, i) = pdiff(f, x0, i);
     end

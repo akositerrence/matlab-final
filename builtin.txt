@@ -1,0 +1,36 @@
+built in functons:
+    diff
+    integral
+    integral2
+    integral3
+    trapz
+
+notes: 
+bisection
+    bounded method
+    strengths;
+    guaranteed to find a root
+    weaknesses;
+    need to have opposite signs
+    relatively slow
+    single variable scalar function only
+
+secant
+    strengths;
+    fast
+    no need to calc derivative
+    weaknesses;
+    may fail
+    single variable scalar function only
+
+newtons
+    strenghts;
+    fast
+    multivariate vector valued function
+    weaknesses;
+    computationally expensive
+    may fail
+
+trisect
+    bounded method
+    unimodal functions (one maxima)

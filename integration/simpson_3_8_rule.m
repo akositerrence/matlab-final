@@ -1,5 +1,6 @@
-function s = simpson_3_3_rule(f, a, b, N)
-    X = linspace(a, b, N+1);
-    h = (b-a)/N;
-    s = (f(a) + f(b) + 4*sum(f(X(2:2:N))) + 2*sum(f(X(3:2:(N-1))))) * h/3;
+function area = simpson_3_8_rule(f, a, b, n)
+    X = linspace(a, b, n+1);
+    h = (b-a)/n;
+    fx = f(X);
+    area = (3*h/8) * (fx(1) + (3*sum(fx(2:3:n-1))) + (3*sum(fx(3:3:n))) + (2*sum(fx(4:3:n-2)) + fx(end)));
 end
